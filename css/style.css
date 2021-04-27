@@ -1,0 +1,95 @@
+:root{
+
+    /*### Primary*/
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /*### Neutral*/
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Kumbh Sans;
+    Font-size: 18px;
+    font-weight: 400;
+    background: var(--Dark-cyan);
+    color: var(--Very-dark-desaturated-blue);
+}
+.bg-img-top{
+    position: fixed;
+    top: -500px;
+    left: -250px;
+    z-index: -5;
+}
+.bg-img-bot{
+    position: fixed;
+    bottom: -570px;
+    right: -250px;
+    z-index: -5;
+}
+.vignette{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    overflow: hidden;
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PP{
+    position: absolute;
+    transform: translateY(80%);
+    border-radius: 200px;
+    border: #fff 6px solid;
+}
+.name{
+    margin-top: 5rem;
+    font-weight: 700;
+}
+.age{
+    font-weight: 300;
+    color: var(--Dark-grayish-blue);
+}
+.city{
+    margin-top: 1rem;
+    color: var(--Dark-gray);
+}
+.line{
+    margin-top: 2rem;
+    height: 1px;
+    width: 100%;
+    background: rgb(204, 204, 204);
+}
+.footer-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.container-card{
+    text-align: center;
+}
+.card-number{
+    font-size: 18px;
+    font-weight:700;
+}
+.card-text{
+    margin-top: 0.5rem;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--Dark-gray);
+}
